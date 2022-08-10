@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working at Microsoft as a Support Escalation Engineer in Intune, and with a strong background on Exchange On-premises and Online.
+- 🔭 I’m currently working at Microsoft as a Support Escalation Engineer in Intune, and with a strong background in Exchange On-premises and Online.
 - 💾 You will find most of my projects are written in Powershell.
 - 🌱 I’m currently learning about Web Development and Python.
 - 🪐 I'm a fast learner and usually I want to learn thousands of things at the same time.
