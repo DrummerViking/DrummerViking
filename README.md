@@ -1,4 +1,4 @@
-The below is built using the [build-svg.ps1](https://github.com/drummerviking/drummerviking/blob/master/build-svg.ps1) PowerShell script, which runs daily at 4am via this [GitHub Action](https://github.com/drummerviking/drummerviking/blob/master/.github/workflows/readme.yml) based on [dfinke](https://github.com/dfinke) profile.
+The below is built using the [build-svg.ps1](https://github.com/drummerviking/drummerviking/blob/main/build-svg.ps1) PowerShell script, which runs daily at 4am via this [GitHub Action](https://github.com/drummerviking/drummerviking/blob/main/.github/workflows/readme.yml) based on [dfinke](https://github.com/dfinke) profile.
 
 <br/>
 
