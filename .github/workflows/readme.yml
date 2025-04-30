@@ -21,8 +21,8 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
-          author_name: Doug Finke
-          author_email: finked@hotmail.com
+          author_name: Agustin Gallegos
+          author_email: agustin.gallegos@masked.com
           message: "Auto updating my readme"
           add: "*.svg"
         env:
