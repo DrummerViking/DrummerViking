@@ -2,7 +2,7 @@ The below is built using the [build-svg.ps1](https://github.com/drummerviking/dr
 
 <br/>
 
-![](./chat.svg)
+[![](./chat.svg)]([https://twitter.com/dfinke](https://www.linkedin.com/in/agustin-gallegos/))
 
 ![github stats](https://github-readme-stats.vercel.app/api?username=DrummerViking&show_icons=true&line_height=30&theme=shadow_blue)
 
