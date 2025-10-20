@@ -37,7 +37,8 @@ $url = "https://api.open-meteo.com/v1/forecast?latitude=39.7436&longitude=-8.807
 $r = Invoke-RestMethod $url
 
 #$target = $r.DailyForecasts[0]
-$degF = $r.Temperature.Maximum.Value
+#$degF = $r.Temperature.Maximum.Value
+$degF = $r.hourly.temperature_2m[4]
 $degC = [math]::Round((($degF - 32) / 1.8))
 #$icon = $emojis[[int]$target.Day.Icon]
 $icon = ""
