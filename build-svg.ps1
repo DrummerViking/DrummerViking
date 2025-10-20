@@ -1,5 +1,5 @@
-$key = $env:WEATHER_API_KEY
-$locationKey = "273891";
+#$key = $env:WEATHER_API_KEY
+#$locationKey = "273891";
 
 $emojis = @{
     1  = "☀️"
@@ -32,13 +32,15 @@ $emojis = @{
     32 = "🥶"
 }
 
-$url = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/$($locationKey)?apikey=$($key)"
+#$url = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/$($locationKey)?apikey=$($key)"
+$url = "https://api.open-meteo.com/v1/forecast?latitude=39.7436&longitude=-8.8071&hourly=temperature_2m&timezone=GMT&forecast_days=1&temperature_unit=fahrenheit"
 $r = Invoke-RestMethod $url
 
-$target = $r.DailyForecasts[0]
-$degF = $target.Temperature.Maximum.Value
+#$target = $r.DailyForecasts[0]
+$degF = $r.Temperature.Maximum.Value
 $degC = [math]::Round((($degF - 32) / 1.8))
-$icon = $emojis[[int]$target.Day.Icon]
+#$icon = $emojis[[int]$target.Day.Icon]
+$icon = ""
 $psTime = (get-date).year - (get-date "7/1/2008").year 
 $todayDay = (get-date).DayOfWeek
 
