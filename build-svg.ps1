@@ -33,7 +33,7 @@ $emojis = @{
 }
 
 #$url = "http://dataservice.accuweather.com/forecasts/v1/daily/1day/$($locationKey)?apikey=$($key)"
-$url = "https://api.open-meteo.com/v1/forecast?latitude=39.7436&longitude=-8.8071&hourly=temperature_2m&timezone=GMT&forecast_days=1&temperature_unit=fahrenheit"
+$url = "https://api.open-meteo.com/v1/forecast?latitude=39.7436&longitude=-8.8071&hourly=temperature_2m,weather_code&timezone=GMT&forecast_days=1&temperature_unit=fahrenheit"
 $r = Invoke-RestMethod $url
 
 #$target = $r.DailyForecasts[0]
