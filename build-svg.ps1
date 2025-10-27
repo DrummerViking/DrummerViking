@@ -38,10 +38,10 @@ $r = Invoke-RestMethod $url
 
 #$target = $r.DailyForecasts[0]
 #$degF = $r.Temperature.Maximum.Value
-$degF = $r.hourly.temperature_2m[4]
+$degF = $r.hourly.temperature_2m[12]
 $degC = [math]::Round((($degF - 32) / 1.8))
 #$icon = $emojis[[int]$target.Day.Icon]
-$icon = $emojis[[int]$r.hourly.weather_code[4]]
+$icon = $emojis[[int]$r.hourly.weather_code[12]]
 $psTime = (get-date).year - (get-date "7/1/2008").year 
 $todayDay = (get-date).DayOfWeek
 
